@@ -42,6 +42,9 @@ header img{
     align-items: center;
     padding-right:40px ;
 }
+.headerMenu ul li:hover{
+    color: rgb(88, 81, 56);
+}
 
 .headerMenu ul li{
     display: inline-block;
@@ -77,8 +80,9 @@ td, th{
 }
 
 h1{ color: rgb(255, 255, 255);
-    font-size: 25px;
+    font-size: 23px;
     text-align: center;  
+    font-weight: 700;
 
 }
 
@@ -86,6 +90,10 @@ h2,h3{
     color: rgb(95, 70, 23);
     line-height: 1.6;
     text-align: left; 
+}
+
+h2 {
+    font-size: 23px;
 }
 
 

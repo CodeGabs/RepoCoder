@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riviss Store</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 
@@ -40,21 +42,25 @@
         <div class="inicioIndex">
 
             <div class="inicioIndex__video">
-                <iframe width="400" height="224" src="https://www.youtube.com/embed/NaK9y09ZXQc" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+                <iframe width="400" height="224" src="https://www.youtube.com/embed/NaK9y09ZXQc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
 
             </div>
-            
+
             <div class="inicioIndex__texto">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio quibusdam, eligendi fuga praesentium, ab excepturi minus illum nesciunt, eum earum unde inventore esse numquam quia dolore assumenda sint doloremque neque.
-                Dolores error ut doloremque molestias eos iste totam exercitationem facilis aut ipsum quaerat suscipit vel obcaecati accusamus beatae id ratione, temporibus, saepe nam! Cumque accusamus pariatur doloremque praesentium similique doloribus.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio quibusdam, eligendi fuga praesentium,
+                    ab excepturi minus illum nesciunt, eum earum unde inventore esse numquam quia dolore assumenda sint
+                    doloremque neque.
+                    Dolores error ut doloremque molestias eos iste totam exercitationem facilis aut ipsum quaerat
+                    suscipit vel obcaecati accusamus beatae id ratione, temporibus, saepe nam! Cumque accusamus pariatur
+                    doloremque praesentium similique doloribus.</p>
             </div>
-        
+
         </div>
 
-        
+
     </main>
     <section>
         <h2>Marcas</h2>
@@ -71,6 +77,32 @@
         <!--Acá habrá una sección que conecte con las redes sociales-->
     </footer>
 
+    <!-- Modal newsletter -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Suscríbete a nuestro newsletter</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Y entérate de todas nuestras ofertas ♥️
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-dark">¡Vamos!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>          
+        $('#exampleModal').modal("show");
+    </script>      
 </body>
 
 </html>
