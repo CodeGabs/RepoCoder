@@ -23,7 +23,7 @@ a{
 
 }
     
-nav img{
+header img{
     width: 140px;
     vertical-align: middle;
 }
@@ -223,5 +223,22 @@ textarea{
     .header{
         padding-left: 20px;
         flex-wrap: wrap;
-    }    
+    }   
+    iframe {
+        max-width: 100%;
+    }
+    .inicioIndex {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+}
+
+@media only screen and (min-width:769px){
+    .navbar-expand-lg .navbar-collapse{
+        justify-content:flex-end;
+    }
+    .headerMenu{
+    width:100% !important;
+    }
+
 }
