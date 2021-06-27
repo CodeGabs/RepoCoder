@@ -23,7 +23,7 @@ a{
 
 }
     
-header img{
+nav img{
     width: 140px;
     vertical-align: middle;
 }
@@ -42,6 +42,7 @@ header img{
     align-items: center;
     padding-right:40px ;
 }
+
 .headerMenu ul li:hover{
     color: rgb(88, 81, 56);
 }
