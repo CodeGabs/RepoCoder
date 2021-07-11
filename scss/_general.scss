@@ -1,0 +1,189 @@
+$colorBase: rgba(160, 144, 98, 0.87);
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;}
+
+body{
+    padding: 0;
+    margin: 0;
+}    
+
+a{
+    text-decoration: none;
+}
+
+main, section, footer{
+    padding: 20px;
+}
+nav img{
+    width: 250px;
+}
+
+main img{
+    width: 300px;
+}
+
+#tituloindex h1 {
+    color: rgba(45, 92, 44, 0.877)
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid white;
+    background-color: $colorBase ;
+    padding: 5px 4px;
+    color: white;
+}
+
+h1{ color: rgb(255, 255, 255);
+    font-size: 23px;
+    text-align: center;  
+    font-weight: 700;
+}
+
+h2,h3{ 
+    color: $colorBase;
+    line-height: 1.6;
+    text-align: left; 
+}
+
+h2 {
+    font-size: 23px;
+}
+
+form{
+    color: rgb(121, 102, 52);
+}
+
+li a{
+    font-weight: 700;
+    color: $colorBase;
+}
+
+#joyas{
+
+    background: linear-gradient( rgb(255, 255, 255), rgb(51, 51, 51)), url(../images/joyasencabezado.jpg) center center no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;  
+}
+
+#joyas h2, #joyas p{
+    color: white;
+}
+
+#relojes{
+    background: linear-gradient(rgb(255, 255, 255), rgb(51, 51, 51)), url(../images/relojesencabezado.jpg) center center no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#relojes h2, #relojes p{
+    color: white;
+}
+   
+
+#promociones{
+    background: linear-gradient(rgb(255, 255, 255), rgb(51, 51, 51)), url(../images/promocionesencabezado.jpg) center center no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#promociones h2, #promociones p{
+    color: white;
+}
+  
+.principal{
+    padding: 15px;
+}
+
+iframe{
+    margin-top: 20px ;
+    margin-bottom: 20px ;
+}
+
+fieldset{
+    margin-top: 20px ;
+}
+
+.specifics{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "title title" 
+                         "image specific";
+}
+.sectionTitle{
+    grid-area: title;
+}
+.sectionImage{
+    padding:20px;
+}
+.sectionSpecific{    
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.sectionSpecific table{
+    width: 100%;
+}
+
+.specifics img {
+    max-width: 100%;
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+   
+}
+.sectionSpecific > div {
+    width: 500px;
+    max-width: 100%;
+}
+
+.inicioIndex{
+    display: flex;
+}
+
+.inicioIndex__texto{
+   
+    padding-left: 50px;
+    padding-right: 40px;
+    padding-top: 40px;
+}
+
+.rowForm{
+    margin: 10px auto;
+}
+
+textarea{
+    width: 100%;
+}
+#especificaciones img{
+    width: 300px;
+
+}
+@media only screen and (max-width: 768px) {
+     
+    iframe {
+        max-width: 100%;
+    }
+    .inicioIndex {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+}
+
+@media only screen and (min-width:769px){
+    .navbar-expand-lg .navbar-collapse{
+        justify-content:flex-end;
+    }
+}
+
+
+
