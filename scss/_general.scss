@@ -14,7 +14,7 @@ a{
 }
 
 main, section, footer{
-    padding: 20px;
+    padding: 30px;
 }
 nav img{
     width: 250px;
@@ -136,7 +136,7 @@ fieldset{
 
 .specifics img {
     max-width: 100%;
-    width: 250px;
+    width: 230px;
     margin: 0 auto;
     display: block;
    
@@ -165,7 +165,7 @@ textarea{
     width: 100%;
 }
 #especificaciones img{
-    width: 300px;
+    width: 270px;
 
 }
 
@@ -174,10 +174,25 @@ textarea{
 }
 
 .carousel {
-    width: 410px;
+    width: 460px;
     margin: 0 auto;
     max-width: 100%;
     position: relative;
+}
+
+footer img{
+    width: 40px;
+}
+
+footer ul{
+    
+    max-width: 100%;
+    list-style-type: none;
+    display: inline-block;
+    display: grid;
+    grid-template-columns: 10% 10% 80%;
+    grid-template-areas: "icon icon icon" 
+                         
 }
 
 @media only screen and (max-width: 768px) {
