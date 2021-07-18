@@ -138,6 +138,12 @@ textarea {
 .btn a {
   color: white; }
 
+.carousel {
+  width: 410px;
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative; }
+
 @media only screen and (max-width: 768px) {
   iframe {
     max-width: 100%; }
