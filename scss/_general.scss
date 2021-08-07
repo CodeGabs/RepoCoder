@@ -1,4 +1,7 @@
 $colorBase: rgba(160, 144, 98, 0.87);
+$colorLinks: rgb(85, 41, 27);
+$colorTitulos: rgba(70, 44, 29, 0.877);
+
 
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 *{font-family: 'Nunito', sans-serif;
@@ -24,8 +27,24 @@ main img{
     width: 300px;
 }
 
-#tituloindex h1 {
-    color: rgba(45, 92, 44, 0.877)
+#tituloMain h1 {
+    color: $colorTitulos;
+}
+
+.contacto{
+    h1{color: $colorTitulos;
+    }
+
+    h2 {
+        font-size: 23px;
+        width: 100%;
+        font-weight: bold;
+        color: #675733;
+        margin-left: 0px;
+    }
+
+    a{color: $colorLinks;
+    }
 }
 
 table{
@@ -45,14 +64,19 @@ h1{ color: rgb(255, 255, 255);
     font-weight: 700;
 }
 
-h2,h3{ 
+h3{ 
     color: $colorBase;
     line-height: 1.6;
     text-align: left; 
+    font-size: 20px;
 }
 
 h2 {
     font-size: 23px;
+    width: 100%;
+    font-weight: bold;
+    color: #675733;
+    margin-left: 10px;
 }
 
 form{
@@ -126,56 +150,43 @@ fieldset{
     display: flex;
     justify-content: center;
     padding: 20px;
-}
 
-.sectionSpecific table{
-    width: 100%;
-}
+    table{
+        width: 100%;
+    }
 
-.specifics img {
-    max-width: 100%;
-    width: 230px;
-    margin: 0 auto;
-    display: block;
-   
-}
-.sectionSpecific > div {
-    width: 500px;
-    max-width: 100%;
+    > div {
+        width: 500px;
+        max-width: 100%;
+    }
+        
 }
 
 .specifics{
     padding: 30px;
     display: block;
+
+    img {
+        max-width: 100%;
+        width: 230px;
+        margin: 0 auto;
+        display: block;
+    }
 }
+
 .specificsCont{
     display: flex;
     flex-wrap: wrap;
     background: rgb(224, 223, 222);
     padding: 25px 35px;
     border-radius: 10px;
-
-    h2{
-        width: 100%;
-        font-weight: bold;
-        color: #675733;
-        margin-left: 10px;
-    }
-
 }
 
+
 .indexCont{
-      
     background: rgb(224, 223, 222);
     padding: 25px 35px;
     border-radius: 10px;
-
-    h2{
-        width: 100%;
-        font-weight: bold;
-        color: #675733;
-        margin-left: 10px;
-    }
 }
 
 .indexFlexCont{
@@ -183,13 +194,6 @@ fieldset{
     background: rgb(224, 223, 222);
     padding: 25px 35px;
     border-radius: 10px;
-
-    h2{
-        width: 100%;
-        font-weight: bold;
-        color: #675733;
-        margin-left: 10px;
-    }
 }
 
 .brandCont{
@@ -197,17 +201,10 @@ fieldset{
     background: rgb(224, 223, 222);
     padding: 25px 35px;
     border-radius: 10px;
-
-    h2{
-        width: 100%;
-        font-weight: bold;
-        color: #675733;
-        margin-left: 10px;
-    }
 }
 .section1{
     
-    background: #e8e3d0;
+    background: #ffffff;
     border-radius: 10px;
     overflow: hidden;
     margin: 10px 10px;
@@ -229,6 +226,22 @@ fieldset{
     padding-top: 40px;
 }
 
+.policyCont{
+
+    background: rgb(224, 223, 222);
+    padding: 25px 35px;
+    border-radius: 10px;
+
+    div{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    }
+
+    a{color: $colorLinks;}
+    
+}
+
 .rowForm{
     margin: 10px auto;
 }
@@ -236,6 +249,13 @@ fieldset{
 textarea{
     width: 100%;
 }
+#especificacionesIndex img{
+    width: 300px;
+    max-width: 100%;
+    margin: 0px;
+    display: block;
+}
+
 #especificaciones img{
     width: 300px;
     max-width: 100%;
@@ -265,7 +285,7 @@ footer{
     }
 
     ul{
-    
+        padding: 0;
         max-width: 100%;
         list-style-type: none;
         display: inline-block;
@@ -281,6 +301,10 @@ footer{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+
+    a{
+        color: $colorLinks;
+    }
 }
 
 #copyright{
@@ -313,9 +337,12 @@ footer{
     .inicioIndex__texto{
         padding: 0;
     }
-    #tituloindex h1{
+    #tituloMain h1{
         margin-bottom: 25px;
     }    
+    .contacto h1{
+        margin-bottom: 25px;
+    } 
     .productSpecific{
         width: 100%;
     }
@@ -337,6 +364,3 @@ footer{
     }
 
 }
-
-
-
