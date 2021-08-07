@@ -114,12 +114,15 @@ fieldset{
 
 
 .sectionTitle{
-    grid-area: title;
+
+    width: 100%;
 }
 .sectionImage{
+
     padding:0;
 }
-.sectionSpecific{    
+.sectionSpecific{   
+
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -150,7 +153,22 @@ fieldset{
     flex-wrap: wrap;
     background: rgb(224, 223, 222);
     padding: 25px 35px;
-    border-radius: 50px;
+    border-radius: 10px;
+
+    h2{
+        width: 100%;
+        font-weight: bold;
+        color: #675733;
+        margin-left: 10px;
+    }
+
+}
+
+.indexCont{
+      
+    background: rgb(224, 223, 222);
+    padding: 25px 35px;
+    border-radius: 10px;
 
     h2{
         width: 100%;
@@ -160,16 +178,43 @@ fieldset{
     }
 }
 
+.indexFlexCont{
+    display: flex;
+    background: rgb(224, 223, 222);
+    padding: 25px 35px;
+    border-radius: 10px;
+
+    h2{
+        width: 100%;
+        font-weight: bold;
+        color: #675733;
+        margin-left: 10px;
+    }
+}
+
+.brandCont{
+       
+    background: rgb(224, 223, 222);
+    padding: 25px 35px;
+    border-radius: 10px;
+
+    h2{
+        width: 100%;
+        font-weight: bold;
+        color: #675733;
+        margin-left: 10px;
+    }
+}
 .section1{
     
     background: #e8e3d0;
-    border-radius: 50px;
+    border-radius: 10px;
     overflow: hidden;
     margin: 10px 10px;
 }
 
 .specificspages {
-    display: grid;
+    
     grid-template-columns: 40% 60%;
     grid-template-areas: "title title"  "image specific"; }
 
@@ -192,8 +237,10 @@ textarea{
     width: 100%;
 }
 #especificaciones img{
-    width: 100%;
-
+    width: 300px;
+    max-width: 100%;
+    margin: 20px auto;
+    display: block;
 }
 
 .btn a{
@@ -235,6 +282,16 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+
+#copyright{
+    border-radius: 10px;
+    background: rgb(212, 198, 183);
+    padding: 25px 35px;
+
+    p{
+        color:rgb(61, 48, 36);
+    }
+}
     
 
 @media only screen and (max-width: 768px) {
@@ -246,7 +303,22 @@ footer{
         display: flex;
         flex-wrap: wrap;
     } 
-    
+    .indexFlexCont{
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+    .footerCont{
+        flex-wrap: wrap;
+    }
+    .inicioIndex__texto{
+        padding: 0;
+    }
+    #tituloindex h1{
+        margin-bottom: 25px;
+    }    
+    .productSpecific{
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width:769px){
@@ -263,6 +335,7 @@ footer{
     .sectionSpecific{    
         width: 50%;
     }
+
 }
 
 

@@ -90,7 +90,7 @@ fieldset {
   margin-top: 20px; }
 
 .sectionTitle {
-  grid-area: title; }
+  width: 100%; }
 
 .sectionImage {
   padding: 0; }
@@ -122,8 +122,39 @@ fieldset {
   flex-wrap: wrap;
   background: #e0dfde;
   padding: 25px 35px;
-  border-radius: 50px; }
+  border-radius: 10px; }
   .specificsCont h2 {
+    width: 100%;
+    font-weight: bold;
+    color: #675733;
+    margin-left: 10px; }
+
+.indexCont {
+  background: #e0dfde;
+  padding: 25px 35px;
+  border-radius: 10px; }
+  .indexCont h2 {
+    width: 100%;
+    font-weight: bold;
+    color: #675733;
+    margin-left: 10px; }
+
+.indexFlexCont {
+  display: flex;
+  background: #e0dfde;
+  padding: 25px 35px;
+  border-radius: 10px; }
+  .indexFlexCont h2 {
+    width: 100%;
+    font-weight: bold;
+    color: #675733;
+    margin-left: 10px; }
+
+.brandCont {
+  background: #e0dfde;
+  padding: 25px 35px;
+  border-radius: 10px; }
+  .brandCont h2 {
     width: 100%;
     font-weight: bold;
     color: #675733;
@@ -131,12 +162,11 @@ fieldset {
 
 .section1 {
   background: #e8e3d0;
-  border-radius: 50px;
+  border-radius: 10px;
   overflow: hidden;
   margin: 10px 10px; }
 
 .specificspages {
-  display: grid;
   grid-template-columns: 40% 60%;
   grid-template-areas: "title title"  "image specific"; }
 
@@ -155,7 +185,10 @@ textarea {
   width: 100%; }
 
 #especificaciones img {
-  width: 100%; }
+  width: 300px;
+  max-width: 100%;
+  margin: 20px auto;
+  display: block; }
 
 .btn a {
   color: white; }
@@ -188,12 +221,30 @@ footer {
   display: flex;
   justify-content: space-between; }
 
+#copyright {
+  border-radius: 10px;
+  background: #d4c6b7;
+  padding: 25px 35px; }
+  #copyright p {
+    color: #3d3024; }
+
 @media only screen and (max-width: 768px) {
   iframe {
     max-width: 100%; }
   .inicioIndex {
     display: flex;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .indexFlexCont {
+    flex-wrap: wrap;
+    padding: 0px; }
+  .footerCont {
+    flex-wrap: wrap; }
+  .inicioIndex__texto {
+    padding: 0; }
+  #tituloindex h1 {
+    margin-bottom: 25px; }
+  .productSpecific {
+    width: 100%; } }
 
 @media only screen and (min-width: 769px) {
   .navbar-expand-lg .navbar-collapse {
